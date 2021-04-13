@@ -21,3 +21,8 @@ img {
   object-fit: cover;
   vertical-align: bottom;
 }
+
+p {
+  text-align: center;
+  margin-top: 25%;
+}
