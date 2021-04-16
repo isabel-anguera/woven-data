@@ -4,6 +4,30 @@ html {
 
 body {
   font-family: "Avenir Next";
+  margin: 0;
+}
+
+#top-nav {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+}
+
+#top-nav a {
+  color: white;
+  text-decoration: none;
+  float: right;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0 2.5%;
+}
+
+#top-nav a:hover {
+  text-decoration: underline;
+}
+
+#landing {
+  margin-bottom: 0;
 }
 
 #landing img {
@@ -12,17 +36,12 @@ body {
   filter: brightness(50%);
 }
 
-#landing h1,
-p {
-  color: white;
+#title-text {
   position: absolute;
-  text-shadow: -2px 2px 15px black;
+  color: white;
+  margin: 18% 25%;
   z-index: 1;
-}
-
-#landing p {
-  width: 55%;
-  margin: 28% 25%;
+  text-shadow: -2px 2px 15px black;
 }
 
 #landing a {
@@ -42,7 +61,8 @@ p {
 h1 {
   text-transform: uppercase;
   font-size: 4em;
-  margin: 20% 25%;
+  margin-bottom: 0;
+  white-space: nowrap;
 }
 
 p {
@@ -51,6 +71,11 @@ p {
 
 #photos {
   margin-top: 0;
+}
+
+#photos p {
+  width: 60%;
+  text-align: center;
 }
 
 #photos img {
