@@ -1,28 +1,128 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  margin: 0;
+  font-family: "Avenir Next";
 }
 
-ul {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  padding: 0;
+#landing img {
+  width: 100%;
+  z-index: 0;
+  filter: brightness(50%);
 }
 
-li {
-  height: 40vh;
-  flex-grow: 1;
+#landing h1,
+p {
+  color: white;
+  position: absolute;
+  text-shadow: -2px 2px 15px black;
+  z-index: 1;
 }
 
-img {
-  max-height: 50%;
-  min-width: 100%;
-  border: solid 1px silver;
-  object-fit: cover;
-  vertical-align: bottom;
+#landing p {
+  width: 55%;
+  margin: 28% 25%;
+}
+
+#landing a {
+  position: absolute;
+  margin: 55% 43%;
+  z-index: 2;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#landing a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 4em;
+  margin: 20% 25%;
 }
 
 p {
+  line-height: 1.6;
+}
+
+#photos {
+  margin-top: 0;
+}
+
+#photos img {
+  width: 30%;
+  vertical-align: text-top;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  display: inline;
+  padding: 0 2% 0 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 20%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 10px;
+  vertical-align: middle;
+  width: 100%;
+  box-shadow: -2px 2px 10px silver;
+}
+
+/* .column img:hover {
+  box-shadow: -2px 2px 10px black;
+} */
+
+#gallery {
+  margin: 0 auto 0 auto;
   text-align: center;
-  margin-top: 25%;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  #landing p {
+    display: none;
+  }
+
+  #landing img {
+    filter: none;
+  }
+
+  #landing a {
+    display: none;
+  }
+
+  h1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
