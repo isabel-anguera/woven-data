@@ -37,7 +37,7 @@ body {
   color: white;
   margin: 18% 25%;
   z-index: 1;
-  text-shadow: -2px 2px 15px black;
+  /* text-shadow: -2px 2px 15px black; */
 }
 
 #title-text p {
@@ -186,7 +186,8 @@ li {
 
   #top-nav a {
     float: none;
-    background-color: black;
+    color: white;
+    background-color: #00000040;
     padding: 2% 2.5%;
   }
 
