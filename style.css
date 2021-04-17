@@ -26,10 +26,6 @@ body {
   text-decoration: underline;
 }
 
-#landing {
-  margin-bottom: 0;
-}
-
 #landing img {
   width: 100%;
   z-index: 0;
@@ -44,10 +40,16 @@ body {
   text-shadow: -2px 2px 15px black;
 }
 
-#landing a {
-  position: absolute;
-  margin: 55% 43%;
-  z-index: 2;
+#title-text p {
+  margin-bottom: 5%;
+}
+
+#phone-title-text {
+  display: none;
+}
+
+#title-text a {
+  margin-left: 40%;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -69,18 +71,21 @@ p {
   line-height: 1.6;
 }
 
-#photos {
-  margin-top: 0;
+#main {
+  margin: 0 10% 0 10%;
+  width: 80%;
 }
 
-#photos p {
-  width: 60%;
+#main p {
   text-align: center;
+  margin: 0 auto 7% auto;
+  padding-top: 7%;
+  width: 60%;
 }
 
-#photos img {
-  width: 30%;
-  vertical-align: text-top;
+#main img {
+  width: 31%;
+  vertical-align: -webkit-baseline-middle;
 }
 
 ul {
@@ -112,14 +117,28 @@ li {
   box-shadow: -2px 2px 10px silver;
 }
 
-/* .column img:hover {
+.column a {
+  text-decoration: none;
+  color: grey;
+}
+
+.column img:hover {
   box-shadow: -2px 2px 10px black;
-} */
+}
+
+.column a:hover {
+  text-shadow: -2px 2px 10px black;
+}
 
 #gallery {
   margin: 0 auto 0 auto;
   text-align: center;
-  width: 100%;
+  width: 80%;
+}
+
+.caption {
+  font-style: italic;
+  position: relative;
 }
 
 @media screen and (max-width: 800px) {
@@ -140,8 +159,39 @@ li {
     display: none;
   }
 
+  #phone-title-text {
+    display: block;
+  }
+
+  #phone-title-text h1 {
+    display: block;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  #main p {
+    width: 100%;
+    text-align: left;
+  }
+
   h1 {
     display: none;
+  }
+
+  li {
+    display: block;
+    padding: 0 2% 0 0;
+    margin-top: 2%;
+  }
+
+  #top-nav a {
+    float: none;
+    background-color: black;
+    padding: 2% 2.5%;
+  }
+
+  #main img {
+    width: 100%;
   }
 }
 
