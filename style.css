@@ -242,6 +242,12 @@ span {
   margin-top: -5%;
 }
 
+@media screen and (max-width: 1000px) {
+  #main img {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .column {
     flex: 50%;
@@ -279,7 +285,7 @@ span {
     display: none;
   }
 
-  li {
+  #top-nav li {
     display: none;
     padding: 0 2% 0 0;
     margin-top: 2%;
