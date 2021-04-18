@@ -37,7 +37,6 @@ body {
   color: white;
   margin: 18% 25%;
   z-index: 1;
-  /* text-shadow: -2px 2px 15px black; */
 }
 
 #title-text p {
@@ -127,7 +126,7 @@ li {
 }
 
 .column a:hover {
-  text-shadow: -2px 2px 10px black;
+  text-shadow: -2px 2px 20px black;
 }
 
 #gallery {
@@ -139,6 +138,62 @@ li {
 .caption {
   font-style: italic;
   position: relative;
+}
+
+/* ***************************************************************************** */
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  float: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: white;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+span {
+  font-size: 5em;
+  cursor: pointer;
+  color: silver;
+  display: none;
+  z-index: 3;
+  margin-top: -5%;
 }
 
 @media screen and (max-width: 800px) {
@@ -179,20 +234,19 @@ li {
   }
 
   li {
-    display: block;
+    display: none;
     padding: 0 2% 0 0;
     margin-top: 2%;
   }
 
-  #top-nav a {
-    float: none;
-    color: white;
-    background-color: #00000040;
-    padding: 2% 2.5%;
-  }
-
   #main img {
     width: 100%;
+  }
+
+  span {
+    display: block;
+    padding-left: 2%;
+    vertical-align: text-top;
   }
 }
 

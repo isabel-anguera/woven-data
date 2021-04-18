@@ -14,8 +14,30 @@
             <li><a href="index.html">Exhibition</a></li>
             <li><a href="index.html">Publication</a></li>
         </ul>
+    
+
+        <script>
+            function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+            }
             
+            function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+        
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a style = "float:none;" href="#">Isabel Anguera</a>
+                <a style = "float:none;" href="#">Exhibition</a>
+                <a style = "float:none;" href="#">Publication</a>
+            </div>
+        </div>
+
+        <span onclick="openNav()">&#8801;</span>
     </div>
+
     <div id ="landing">
         <div id="title-text">
             <h1>Woven Data</h1>
@@ -44,7 +66,6 @@
     </div>
 
     <img style = "width: 100%" src = "Assets/coat-digital.png">
-
 
 <div id = "gallery">
     <div class = "row">
