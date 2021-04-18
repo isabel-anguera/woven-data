@@ -65,7 +65,13 @@
         </ul>
     </div>
 
-    <img style = "width: 100%" src = "Assets/coat-digital.png">
+    <img style = "width: 100%; margin-bottom: 0" src = "Assets/coat-digital.png">
+
+    <div id="toggle-view">
+        <button id="tileViewButton" onclick="toggleToTile()">Tiles</button>
+        <button id="listViewButton" onclick="toggleToList()">List</button>
+    </div>
+
 
 <div id = "gallery">
     <div class = "row">
@@ -121,7 +127,7 @@
             <a href="index.html"><img src = "Assets/Digital_Tiles/Face Recognition.png">
             <p class="caption">My face looks like this.</p></a>
             <a href="index.html"><img src = "Assets/Digital_Tiles/Family 2.png">
-            <p class="caption">I have 5 people in my family.</p></a>
+            <p class="caption">There are 5 people in my family.</p></a>
             <a href="index.html"><img src = "Assets/Digital_Tiles/Family.png">
             <p class="caption">I am the youngest in my family.</p></a>
             <a href="index.html"><img src = "Assets/Digital_Tiles/Following.png">
@@ -166,6 +172,90 @@
         </div>
     </div>
 </div>
+
+<div id ="list-view">
+    <ol>
+        <li><a href="#">I played sports in high school.</a></li>
+        <li><a href="#">I am 22 years old.</a></li>
+        <li><a href="#">I went to Roosevelt</a></li>
+        <li><a href="#">I played sports in high school.</a></li>
+        <li><a href="#">I lived in Baltimore.</a></li>
+        <li><a href="#">I play basketball.</a></li>
+        <li><a href="#">I played sports in high school.</a></li>
+        <li><a href="#">I was born in 1998.</a></li>
+        <li><a href="#">I went to CAISL.</a></li>
+        <li><a href="#">I lived in Cascais.</a></li>
+        <li><a href="#">I am a college student.</a></li>
+        <li><a href="#">I am a democrat.</a></li>
+        <li><a href="#">I graduated 8th grade in 2013.</a></li>
+        <li><a href="#">I speak English and Spanish.</a></li>
+        <li><a href="#">I live in the EST.</a></li>
+        <li><a href="#">I don't have kids.</a></li>
+        <li><a href="#">I lived in Lima.</a></li>
+        <li><a href="#">I lived in Lynchburg.</a></li>
+        <li><a href="#">I went to VES.</a></li>
+        <li><a href="#">I play volleyball.</a></li>
+        <li><a href="#">I work in technology.</a></li>
+        <li><a href="#">I graduate college in 2021.</a></li>
+        <li><a href="#">I am financially dependent.</a></li>
+        <li><a href="#">My face looks like this.</a></li>
+        <li><a href="#">There are 5 people in my family.</a></li>
+        <li><a href="#">I am the youngest in my family.</a></li>
+        <li><a href="#">I have 313 followers & follow 265.</a></li>
+        <li><a href="#">I was born on 10/20/1998.</a></li>
+        <li><a href="#">I am a woman.</a></li>
+        <li><a href="#">I am not a homeowner Pt. I.</a></li>
+        <li><a href="#">I am not a homeowner Pt. II.</a></li>
+        <li><a href="#">I graduated high school in 2017.</a></li>
+        <li><a href="#">I have no income.</a></li>
+        <li><a href="#">I went to JRDS.</a></li>
+        <li><a href="#">My name is Isabel Anguera.</a></li>
+        <li><a href="#">I live in NYC.</a></li>
+        <li><a href="#">I went to Oak Meadow.</a></li>
+        <li><a href="#">I have lived in different places.</a></li>
+        <li><a href="#">My profile picture looks like this.</a></li>
+        <li><a href="#">I am single.</a></li>
+        <li><a href="#">I am not religious.</a></li>
+        <li><a href="#">I go to The New School.</a></li>
+        <li><a href="#">I am unemployed.</a></li>
+        <li><a href="#">I am a ux/ui designer.</a></li>
+    </ol>
+</div>
+
+<script>
+
+    var tileView = document.getElementById("gallery");
+    var listView = document.getElementById("list-view");
+
+    var tileViewButton = document.getElementById("tileViewButton");
+    var listViewButton = document.getElementById("listViewButton");
+
+
+    function toggleToTile() {
+        listView.style.display = "none";
+        tileView.style.display = "block";
+
+        tileViewButton.style.backgroundColor = 'black';
+        tileViewButton.style.color = "white";
+
+        listViewButton.style.color = "black";
+        listViewButton.style.backgroundColor = "white";
+    }
+
+    function toggleToList() {
+        tileView.style.display = "none";
+        listView.style.display = "block";
+
+        tileViewButton.style.backgroundColor = 'white';
+        tileViewButton.style.color = "black";
+
+        listViewButton.style.backgroundColor = "black";
+        listViewButton.style.color = "white";
+    }
+
+
+</script>
+
  
 </body>
 </html>

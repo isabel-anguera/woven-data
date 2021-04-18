@@ -87,6 +87,33 @@ p {
   vertical-align: -webkit-baseline-middle;
 }
 
+#toggle-view {
+  width: 30%;
+  margin: 3% 35%;
+  height: 70px;
+}
+
+button {
+  /* border-radius: 20px; */
+  padding: 2% 5% 5% 5%;
+  text-align: center;
+  width: 45%;
+  height: 50px;
+  font-family: "Avenir Next";
+  font-weight: 600;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+#tileViewButton {
+  background-color: black;
+  color: white;
+}
+
+#listViewButton {
+  background-color: white;
+}
+
 ul {
   list-style-type: none;
   padding-left: 0;
@@ -138,6 +165,25 @@ li {
 .caption {
   font-style: italic;
   position: relative;
+}
+
+#list-view {
+  width: 85%;
+  margin: 0 7.5%;
+}
+
+#list-view li {
+  display: inline;
+}
+
+#list-view a:hover {
+  font-weight: 600;
+}
+
+#list-view a {
+  color: black;
+  font-style: italic;
+  font-size: 3em;
 }
 
 /* ***************************************************************************** */
@@ -246,6 +292,33 @@ span {
   span {
     display: block;
     padding-left: 2%;
+  }
+
+  button {
+    font-size: 1em;
+  }
+
+  #list-view {
+    width: 90%;
+    margin: 0 5%;
+  }
+
+  #list-view li {
+    display: inline;
+  }
+
+  .column img:hover {
+    box-shadow: -2px 2px 10px silver;
+  }
+
+  .column a:hover {
+    text-shadow: none;
+  }
+
+  #list-view a {
+    color: black;
+    font-style: italic;
+    font-size: 1.25em;
   }
 }
 
