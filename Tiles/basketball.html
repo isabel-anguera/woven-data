@@ -22,51 +22,68 @@
         <h1>I play basketball.</h1>
         <p>text goes here...</p>
 
-    <div id = "bottom-nav">
-        <select name="tiles" id="select_tile">
-            <option value="I played sports in high school.">I played sports in high school.</option>
-            <option value="I am 22 years old.">I am 22 years old.</option>
-            <option value="I lived in Baltimore.">I lived in Baltimore.</option>
-            <option value="I play basketball." selected>I play basketball.</option>
-            <option value="I was born in 1998.">I was born in 1998.</option>
-            <option value="I went to CAISL.">I went to CAISL.</option>
-            <option value="I lived in Cascais.">I lived in Cascais.</option>
-            <option value="I graduate college in 2021.">I graduate college in 2021.</option>
-            <option value="I am a college student.">I am a college student.</option>
-            <option value="I am a democrat.">I am a democrat.</option>
-            <option value="I am financially dependent.">I am financially dependent.</option>
-            <option value="I graduated 8th grade in 2013.">I graduated 8th grade in 2013.</option>
-            <option value="I speak English and Spanish.">I speak English and Spanish.</option>
-            <option value="I live in the EST timezone.">I live in the EST timezone.</option>
-            <option value="My face looks like this.">My face looks like this.</option>
-            <option value="There are five people in my family.">There are five people in my family.</option>
-            <option value="I am the youngest in my family.">I am the youngest in my family.</option>
-            <option value="I have 313 followers and follow 265.">I have 313 followers and follow 265.</option>
-            <option value="I was born on 10/20/1998.">I was born on 10/20/1998.</option>
-            <option value="I am a woman.">I am a woman.</option>
-            <option value="I am not a homeowner Pt. I.">I am not a homeowner Pt. I.</option>
-            <option value="I am not a homeowner Pt. II.">I am not a homeowner Pt. II.</option>
-            <option value="I graduated high school in 2017.">I graduated high school in 2017.</option>
-            <option value="I have no income.">I have no income.</option>
-            <option value="I went to JRDS.">I went to JRDS.</option>
-            <option value="I lived in Lima.">I lived in Lima.</option>
-            <option value="I lived in Lynchburg.">I lived in Lynchburg.</option>
-            <option value="My name is Isabel Anguera.">My name is Isabel Anguera.</option>
-            <option value="I have no kids.">I have no kids.</option>
-            <option value="I live in NYC.">I live in NYC.</option>
-            <option value="I went to Oak Meadow.">I went to Oak Meadow.</option>
-            <option value="I have lived in different places.">I have lived in different places.</option>
-            <option value="My profile picture looks like this.">My profile picture looks like this.</option>
-            <option value="I am single.">I am single.</option>
-            <option value="I am not religious.">I am not religious.</option>
-            <option value="I went to Roosevelt.">I went to Roosevelt.</option>
-            <option value="I go to The News School.">I go to The News School.</option>
-            <option value="I am unemployed.">I am unemployed.</option>
-            <option value="I am a ux/ui designer.">I am a ux/ui designer.</option>
-            <option value="I went to VES.">I went to VES.</option>
-            <option value="I play volleyball.">I play volleyball.</option>
-            <option value="I work in technology.">I work in technology.</option>
-          </select>   
-    </div>
+        <div id = "bottom-nav">
+            <select name="tiles" id="select_tile" onchange="switchTile()">
+                <option selected disabled>View another tile.</option>
+                <option value="sports.html">I played sports in high school.</option>
+                <option value="age.html" >I am 22 years old.</option>
+                <option value="baltimore.html">I lived in Baltimore.</option>
+                <option value="basketball.html">I play basketball.</option>
+                <option value="birthyear.html">I was born in 1998.</option>
+                <option value="caisl.html">I went to CAISL.</option>
+                <option value="cascais.html">I lived in Cascais.</option>
+                <option value="2021.html">I graduate college in 2021.</option>
+                <option value="student.html">I am a college student.</option>
+                <option value="democrat.html">I am a democrat.</option>
+                <option value="dependent.html">I am financially dependent.</option>
+                <option value="2013.html">I graduated 8th grade in 2013.</option>
+                <option value="languages.html">I speak English and Spanish.</option>
+                <option value="est.html">I live in the EST timezone.</option>
+                <option value="face.html">My face looks like this.</option>
+                <option value="family-1.html">There are five people in my family.</option>
+                <option value="family.html">I am the youngest in my family.</option>
+                <option value="follow.html">I have 313 followers and follow 265.</option>
+                <option value="dob.html">I was born on 10/20/1998.</option>
+                <option value="gender.html">I am a woman.</option>
+                <option value="mallorca.html">I am not a homeowner Pt. I.</option>
+                <option value="homes.html">I am not a homeowner Pt. II.</option>
+                <option value="2017.html">I graduated high school in 2017.</option>
+                <option value="income.html">I have no income.</option>
+                <option value="jrds.html">I went to JRDS.</option>
+                <option value="lima.html">I lived in Lima.</option>
+                <option value="lynchburg.html">I lived in Lynchburg.</option>
+                <option value="name.html">My name is Isabel Anguera.</option>
+                <option value="kids.html">I have no kids.</option>
+                <option value="nyc.html">I live in NYC.</option>
+                <option value="oak-meadow.html">I went to Oak Meadow.</option>
+                <option value="places.html">I have lived in different places.</option>
+                <option value="profile.html">My profile picture looks like this.</option>
+                <option value="relationship.html">I am single.</option>
+                <option value="religion.html">I am not religious.</option>
+                <option value="roosevelt.html">I went to Roosevelt.</option>
+                <option value="tns.html">I go to The News School.</option>
+                <option value="unemployed.html">I am unemployed.</option>
+                <option value="ux.html">I am a ux/ui designer.</option>
+                <option value="ves.html">I went to VES.</option>
+                <option value="volleyball.html">I play volleyball.</option>
+                <option value="technology.html">I work in technology.</option>
+              </select>   
+    
+              <button onclick="navigateToPage()">View</button>
+        </div>
+    
+        <script>
+            var tileSelect = document.getElementById("select_tile");
+            var selectedTile;
+    
+            function switchTile() {
+                selectedTile = tileSelect.value;
+                console.log(selectedTile)
+            }
+    
+            function navigateToPage() {
+                window.location.href = selectedTile;
+            }
+        </script>
 </body>
 </html>
