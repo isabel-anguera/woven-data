@@ -13,6 +13,17 @@ select {
   font-style: italic;
 }
 
+button {
+  color: white;
+  background-color: black;
+  padding: 2%;
+  font-family: "Avenir Next";
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-top: 2px solid black;
+}
+
 ul {
   list-style-type: none;
 }
