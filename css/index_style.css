@@ -240,8 +240,9 @@ span {
   cursor: pointer;
   color: silver;
   display: none;
-  z-index: 3;
+  z-index: 1;
   margin-top: -5%;
+  position: absolute;
 }
 
 @media screen and (max-width: 1000px) {
