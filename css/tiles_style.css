@@ -93,10 +93,15 @@ p {
     width: 80%;
     margin: 0 10%;
     font-size: 1em;
+    text-align: left;
   }
 
   #bottom-nav {
     padding: 10%;
     width: 80%;
+  }
+
+  select {
+    border-width: 1px;
   }
 }
