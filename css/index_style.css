@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: "" Libre Baskerville ", serif";
+  font-family: "Avenir Next";
   margin: 0;
   cursor: url(Assets/cursor.png), auto;
 }
@@ -43,6 +43,10 @@ body {
 
 #title-text p {
   margin-bottom: 5%;
+}
+
+#title-text p:hover {
+  background-color: black;
 }
 
 #phone-title-text {
