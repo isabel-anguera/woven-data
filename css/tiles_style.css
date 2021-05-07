@@ -79,6 +79,12 @@ p {
   text-align: justify;
 }
 
+.caption {
+  font-style: italic;
+  color: slategrey;
+  margin-bottom: 2%;
+}
+
 #bottom-nav {
   padding: 10% 25% 10% 35%;
   width: 40%;
