@@ -11,7 +11,7 @@
 <body>
     <div id="top-nav">
             <ul>
-                <li id="back-btn"><a href="../index.html#tiles">Woven Data</a></li>
+                <li id="back-btn"><a href="../index.html">Woven Data</a></li>
                 <li><a href="http://www.isabelanguera.xyz">Isabel Anguera</a></li>
                 <li><a href="index.html">Exhibition</a></li>
                 <li><a href="index.html">Publication</a></li>
@@ -37,17 +37,70 @@
                 <a style = "float:none;" href="#">Publication</a>
             </div>
         </div>
-        <span onclick="openNav()">&#8801;</span>
+        <span id = "hamburger" onclick="openNav()">&#8801;</span>
         <img src = "Assets/diy-header.png">
 
     </div>
 
     <div id = "container">
         <h1>Explore your own data.</h1>
-        <p>Big data has profiles on us and our identities. These profiles however are often reductive and parts of our personalities, behaviors, and traits, are picked apart and analyzed. We’re put into boxes that we might not know we’re even in or agree with. </p>
-        <p>Before learning more about big data I wasn’t concerned with protecting my own information past preventing identity fraud. But now I realize that it’s deeper than that, and my data plays into consequences systems and processes used by big data have on others. It’s important to protect and worth it. </p>
+        <p>Big data has profiles on us and our identities. These profiles, however are often reductive, and parts of our personalities, behaviors, and traits, are picked apart and analyzed. We’re put into boxes that we might not even know we’re in let alone agree with. </p>
+        <p>Before learning more about big data I wasn’t concerned with protecting my own information past preventing identity fraud. But now I realize that it’s deeper than that. My data plays into consequences systems and processes used by big data have on others. It’s important to protect and worth it. </p>
         <p>By exploring your own data you can not only form a relationship with your information, but feel nostalgic in doing so, or even start a conversation with friends, strangers, or loved ones about topics you may not have covered otherwise!</p>
+        <p>Below are prompts for what kind of data you can explore, and where to find the answers as predicted by the likes of Facebook and Google.</p>
+   
+        <hr>
+
+        <div id = "prompt-section">
+            <h1>Prompt: <span id = "prompt">Name</span></h1>
+            <button onclick = "populatePrompt()">Generate New</button>
+            <h6 onclick = "showList()">View Full list</h6>
+            <div id = "listDiv"></div>
+            <h6 id = "closeListBtn" onclick = "hideList()">Close</h6>
+        </div>
+
+        <hr>
+
+        <h1>Where to find your data.</h1>
+        <ul>
+            <li><a href = "https://www.facebook.com/adpreferences/ad_settings">Facebook Ad Settings </a></li> 
+            <li><a href = "https://www.facebook.com/off_facebook_activity">Facebook: Off-Facebook Activity</a></li>
+            <li><a href = "https://adssettings.google.com/authenticated?hl=en">Google Ad Personalization Settings </a></li>
+        </ul>
     </div>
+
+    <div id = 'bottomline'></div>
+
+    <script>
+        var promptArray = ["Age", "Religion", "Cities Lived In", "Sports Played", "Birthday", "Education Level", "Education History", "Political Affiliation", "Facial Recognition", "Relatives", "Homeownership Status", "Current Location", "Name", "Language(s)", "Kids", "Birthplace", "Significant Locations", "Hobbies", "Employment Status", "Career Industry", "Job", "Visited Websites", "Clicked Ads", "Gender", "Interests", "Income Level", ]
+        var emptyArray = [];
+        var prompt = document.getElementById("prompt");
+
+        var listDiv = document.getElementById("listDiv");
+
+        var closelistBtn = document.getElementById("closeListBtn");
+        
+        let promptContent = promptArray[Math.floor(Math.random() * promptArray.length)];
+        prompt.innerHTML = promptContent;
+        
+        function populatePrompt() {
+            let promptContent = promptArray[Math.floor(Math.random() * promptArray.length)];
+            prompt.innerHTML = promptContent;
+        }
+
+        function showList() {
+            listedPrompts = promptArray.join('</br>');
+            listDiv.innerHTML = listedPrompts;
+            closelistBtn.style.display = "block";
+            listDiv.style.display = "block";
+        }
+
+        function hideList() {
+            closelistBtn.style.display = "none";
+            listDiv.style.display = "none";
+        }
+    
+    </script>
 
     
 </body>

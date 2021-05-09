@@ -43,6 +43,84 @@ p {
   text-align: justify;
 }
 
+button {
+  border: black solid 2px;
+  background-color: white;
+  padding: 2%;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 41.5%;
+  margin-top: 3%;
+}
+
+button:hover {
+  color: white;
+  background-color: black;
+}
+
+button:active {
+  background-color: silver;
+}
+
+#prompt-section {
+  margin: 10% auto;
+}
+
+#prompt {
+  color: slategray;
+}
+
+h6 {
+  font-weight: normal;
+  text-decoration: underline;
+  cursor: pointer;
+  text-align: center;
+}
+
+#closeListBtn {
+  display: none;
+}
+
+#listDiv {
+  text-align: center;
+}
+
+#container {
+  padding-bottom: 20%;
+}
+
+#container a {
+  display: block;
+  text-transform: none;
+  font-weight: normal;
+  line-height: 1.6;
+}
+
+#container ul {
+  width: 100%;
+  /* margin: 0 20%; */
+  padding-left: 0;
+  margin-bottom: 20%;
+}
+
+#container li {
+  padding: 3%;
+  width: 100%;
+  text-align: center;
+  border: solid black 2px;
+  margin-bottom: 2%;
+}
+
+hr {
+  margin: 10%;
+}
+
+#bottomline {
+  background-color: black;
+  height: 100px;
+}
+
 /* ------------------------------------------------------ */
 
 .overlay {
@@ -90,7 +168,7 @@ p {
   font-size: 60px;
 }
 
-span {
+#hamburger {
   font-size: 5em;
   cursor: pointer;
   color: black;
@@ -107,8 +185,16 @@ span {
     margin-top: 2%;
   }
 
-  span {
+  #hamburger {
     display: block;
     padding-left: 2%;
+  }
+
+  button {
+    margin-left: 30%;
+  }
+
+  #bottomline {
+    margin-top: 15%;
   }
 }
